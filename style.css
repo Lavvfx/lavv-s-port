@@ -68,6 +68,11 @@ font-size: 1.05rem;
 padding: 0 3rem;
 }
 
+.insta{
+    font-size: 1.05rem;
+    padding: 0 2rem;
+}
+
 .hamburger{
     padding-left: 1.5rem ;
 }
@@ -128,7 +133,7 @@ main{
  
 .bg-img{
     position:absolute;
-    width: 2000px;
+    width: 140%;
     top: calc(50%);
     left: calc(50%);
     opacity: 1;
@@ -136,44 +141,44 @@ main{
 }
 .sun-8{
     position:absolute;
-    width: 400px;
-    top: calc(50% - 200px);
-    left: calc(50%);
+    width: 33%;
+    top: 26%;
+    left: 50%;
     z-index: 2;
 
 }
 .mountfuji-7{
     position:absolute;
-    width: 1400px;
-    top: calc(50% + 160px);
-    left: calc(50%);
+    width: 115%;
+    top: 75%;
+    left: 50%;
     z-index: 5;
 }
 .cloud-11{
     position:absolute;
-    width: 600px;
-    top: calc(50% - 260px);
-    left: calc(50% - 350px);
+    width: 40%;
+    top: 16%;
+    left: 22%;
     z-index: 6;
 }
 
 .cloud-9{
     position:absolute;
-    width: 1500px;
-    top: calc(50%);
-    left: calc(50%);
+    width: 115%;
+    top: 50%;
+    left: 50%;
     z-index: 3;
 }
 .mountain-10{
     position:absolute;
-    width: 1500px;
-    top: calc(50% - 15px);
-    left: calc(50%);
+    width: 120%;
+    top: 50%;
+    left: 50%;
     z-index: 6;
 }
 .mountain-6{
     position:absolute;
-    width: 1200px;
+    width: 100%;
     top: calc(50% + 200px);
     left: calc(50% + 150px);
     z-index: 7;
@@ -181,7 +186,7 @@ main{
 
 .mountain-5{
     position:absolute;
-    width: 700px;
+    width: 50%;
     top: calc(50% + 250px);
     left: calc(50% + 180px);
     z-index: 7;
@@ -226,6 +231,142 @@ main{
     background: radial-gradient(ellipse at center, rgba(0,0,0,0) 65%, rgba(0,0,0,0.7));
     pointer-events: none;
 }
+
+
+
+/* css for contact me form */
+
+
+
+.popup{
+    background: rgba(0,0,0,0.5);
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+} 
+
+.popup-content {
+    width: 100%;
+    height: 100%;
+    background-image: url(background.jpg);
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.5)
+      );
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .popup-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+   
+  
+  .form-box {
+    width: 90%;
+    max-width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f8f4e1;
+    opacity: 0.7;
+    padding: 50px 60px 50px;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 2;
+  }
+  .form-box h1 {
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #543310;
+    position: relative;
+  }
+  
+  .form-box h1::after {
+    content: "";
+    width: 100px;
+    height: 4px;
+    border-radius: 10px;
+    background: #543310;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .input-field {
+    background: #af8f6f;
+    margin: 15px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.7s;
+    overflow: hidden;
+  }
+  input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+  }
+  
+  input::placeholder {
+    color: #f8f4e1;
+  }
+  
+  .input-field i {
+    margin-left: 15px;
+    color: #f8f4e1;
+  }
+  
+  form p {
+    text-align: left;
+    font-size: 13px;
+  }
+  
+  form p a {
+    text-decoration: none;
+    color: #543310;
+  }
+  
+  .btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn-field button {
+    flex-basis: 48%;
+    background: #543310;
+    color: #F8F4E1;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+  }
+  .input-group {
+    height: 260px;
+  }
+  
+  
 /* .counter { 
     position: fixed;
     width: 100%;
@@ -251,6 +392,9 @@ main{
     height: 105vh;
     background: #b52917;
 } */
+
+
+/* css for resposive website */
 
  @media (max-width: 1100px){
 
@@ -281,4 +425,4 @@ main{
     width: 30px;
    }
 
- }
+ } 
