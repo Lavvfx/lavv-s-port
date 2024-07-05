@@ -112,10 +112,12 @@ window.addEventListener("mousemove", (e) => {
   update(e.clientX);
 });
 
-// contact form function
+
+// contact me from pop up function
 
 document.querySelector(".button").addEventListener("click", function() {
   document.querySelector(".popup").style.display = "flex";
+  document.querySelector(".popup").style.top = window.scrollY + "px";
 });
 
 
