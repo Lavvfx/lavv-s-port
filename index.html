@@ -21,7 +21,7 @@
                     </a>
                 </li>
                 <li class="button">
-                    <a id="contactButton">Contact</a>
+                    <a href="#" id="contactButton">Contact</a>
                 </li>
                 <li class="search">
                     <a href="#">
@@ -36,6 +36,8 @@
             </ul>
         </nav>
     </header>
+
+    
     <div class="imagecontainer">
         <main>
             <div class="vignette hide"></div>
@@ -60,11 +62,16 @@
     <div class="page2">
         <div class="overflow1">
             <img src="assets/bg.png"   class=" scenery">
-            <img src="assets/stars.png"   class=" stars">
+            <div class="bganimation">
+                <img src="assets/stars.png"   class=" stars star1">
+                <img src="assets/stars.png"   class=" stars star2">
+            </div>
             <img src="assets/sky.png"   class=" sky">
-      
+            <img src="assets/moon.png" class="moon">
         </div>
-    
+
+        <div class="projects-btn"> <button class="button-54" role="button"> Projects</button> </div>
+
         <div class="wrapper">
             <div class="slidercontainer">
                 <input class="slidercard" type="radio" name="slide" id="c1" checked>
@@ -116,9 +123,9 @@
 
     <div class="popup">
         <div class="popup-content">
-            <div class="form-box">
+            <div class="formbox">
                 <h1 id="title">Let's Connect</h1>
-                <form id="form" action="https://api.web3forms.com/submit" method="POST">
+                <form class="contactform" id="form" action="https://api.web3forms.com/submit" method="POST">
                     <div class="input-group">
 
                         <input type="hidden" name="access_key" value="d7daa586-bfaf-42ab-befe-43a247062538">
@@ -135,12 +142,12 @@
 
                         <div class="input-field">
                             <i class="fa-solid fa-mobile"></i>
-                            <input type="tel" placeholder="Mobile Number" required>
+                            <input type="tel" id="Mobile" name="Mobile" placeholder="Mobile Number" required>
                           </div>
                           
                           <div class="input-field">
                             <i class="fa-solid fa-building"></i>
-                            <input type="text" placeholder="Organisation Name" required>  
+                            <input type="text" id="Organisation" name="Organisation" placeholder="Organisation Name" required>  
                           </div>
 
                         <div class="input-field" id="messagefield">
