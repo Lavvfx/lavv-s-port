@@ -116,11 +116,12 @@ window.addEventListener("mousemove", (e) => {
 // contact me from pop up function
 
 document.querySelector(".button").addEventListener("click", function() {
+  event.preventDefault();
   document.querySelector(".popup").style.display = "flex";
-  document.querySelector(".popup").style.top = window.scrollY + "px";
 });
 
 
 document.getElementById("close").addEventListener("click", function() {
+  event.preventDefault();
   document.querySelector(".popup").style.display = "none";
 });
