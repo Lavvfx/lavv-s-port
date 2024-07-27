@@ -125,3 +125,15 @@ document.getElementById("close").addEventListener("click", function() {
   event.preventDefault();
   document.querySelector(".popup").style.display = "none";
 });
+
+
+// js for project window reveal
+
+document.querySelector('.projects-btn').addEventListener('click', function() {
+  document.querySelector('.glasscontainer').classList.toggle('projectappear');
+});
+
+document.querySelector('.aboutMe-btn').addEventListener('click', function() {
+  document.querySelector('.aboutmepage').classList.toggle('aboutmepageappear');
+});
+
