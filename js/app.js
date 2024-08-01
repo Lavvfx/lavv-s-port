@@ -115,14 +115,12 @@ window.addEventListener("mousemove", (e) => {
 
 // contact me from pop up function
 
-document.querySelector(".button").addEventListener("click", function() {
-  event.preventDefault();
+document.querySelector(".contact-btn").addEventListener("click", function() {
   document.querySelector(".popup").style.display = "flex";
 });
 
 
 document.getElementById("close").addEventListener("click", function() {
-  event.preventDefault();
   document.querySelector(".popup").style.display = "none";
 });
 
@@ -136,4 +134,3 @@ document.querySelector('.projects-btn').addEventListener('click', function() {
 document.querySelector('.aboutMe-btn').addEventListener('click', function() {
   document.querySelector('.aboutmepage').classList.toggle('aboutmepageappear');
 });
-
