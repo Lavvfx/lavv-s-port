@@ -17,6 +17,7 @@ body{
     background: black;
 }
 .overflow{
+    user-select: none;
     width: 10px;
     height: 10px;
     overflow: hidden;
@@ -144,6 +145,7 @@ main{
     opacity: 1;
     z-index: 1;
 }
+
 .sun-8{
     position:absolute;
     width: 33%;
@@ -152,6 +154,7 @@ main{
     z-index: 2;
     
 }
+
 .mountfuji-7{
     position:absolute;
     width: 120%;
@@ -159,6 +162,7 @@ main{
     left: 50%;
     z-index: 5;
 }
+    
 .cloud-11{
     position:absolute;
     width: 45%;
@@ -246,7 +250,7 @@ main{
     background: rgba(0,0,0,0.5);
     width: 100%;
     height: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     display: none;
     justify-content: center;
@@ -401,21 +405,21 @@ form p a {
 
 .projects-btn{
     top: 89%;
-    left: 46%;
+    left: 51%;
     position: absolute;
     z-index: 101;
 }
 
 .aboutMe-btn{
     top: 89%;
-    left: 24%;
+    left: 40%;
     position: absolute;
     z-index: 101;
 }
 
 .contact-btn{
     top: 89%;
-    left: 68%;
+    left: 5%;
     position: absolute;
     z-index: 101;
 }
@@ -675,6 +679,58 @@ form p a {
         position: absolute;
     }
 
+    .paragraphs{
+
+        left: 25%;
+        width: 50%;
+        height: 100%;
+        /* border: solid rgba(255, 255, 255, 0.18); */
+        position: absolute;
+
+    }
+    #heading{
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 1.5rem;
+        text-align: center;
+        color: #cdd1eb;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .intro{
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 1rem;
+        text-align: center;
+        color: #0B073A;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .badmosi{
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 1rem;
+        text-align: center;
+        color: #0B073A;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .line{
+            margin-left: 25%;
+            border-left: 3px solid rgba(255, 255, 255, 0.18);;
+            height: 500px;
+            z-index: 99;
+    }
+
+    .line1{
+        margin-left: 50%;
+        border-left: 3px solid rgba(255, 255, 255, 0.18);;
+        height: 500px;
+        z-index: 99;
+    }
+
     .profileimg{
         margin-top: 16.5%;
         margin-left: 16.5%;
@@ -686,12 +742,130 @@ form p a {
     }
 
     #superiorname{
-        font-family: "Poppins-regular" , sans-serif;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 1.3rem;
         margin-top: 10%;
         margin-left: 26%;
-        color: #ffffff;
+        color: #cdd1eb;
     }
+
+
+    *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+
+.skills{
+    left: 75%;
+    width: 25%;
+    height: 100%;
+    position: absolute;
+}
+
+#skills{
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 30%;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #cdd1eb;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+.infinitesliderwrapper {
+  width: 100%;
+  max-width: 1536px;
+  position: relative;
+  height: 50px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollRight {
+    to {
+      right: -200px;
+    }
+  }
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 0, 0, 0);
+  border-radius: 6px;
+  position: absolute;
+  left: max(calc(50px * 8), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;  
+}
+
+.icons {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0);
+    border-radius: 6px;
+    position: absolute;
+    right: max(calc(50px * 8), 100%);
+    animation-name: scrollRight;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;  
+  }
+  
+
+.item1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
 
 
     /* ---------------------------------------------------------about me page css end------------------------------ */
